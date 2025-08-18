@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>   
+    body {
+      font-family: Arial, sans-serif;
+      
+    }
+    header {
+      background: #0c2a3d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    header a {
+      display: inline-block;
+      margin-top: 15px;
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      
+    }
+
+    section.services {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .service {
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .service:hover {
+      box-shadow: 0px 4px 10px rgba(100, 132, 3, 0.1);
+    }
+
+    @media (max-width: 992px) {
+      section.services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section.services {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mobile and Web Apps Developed Right the First Time.</h1>
+    <p>We create beautiful iOS, Android, and web applications to fit your needs.</p>
+    <a href="#">Get in Touch</a>
+  </header>
+
+  <section class="services">
+    <div class="service">
+      <h2>Mobile App Development</h2>
+      <p>iOS and Android apps built to perfection.</p>
+    </div>
+    <div class="service">
+      <h2>App Design</h2>
+      <p>User Experience and Interface Design.</p>
+    </div>
+    <div class="service">
+      <h2>Web Development</h2>
+      <p>Modern, scalable, and responsive websites.</p>
+    </div>
+  </section>
+
+</body>
+</html>
